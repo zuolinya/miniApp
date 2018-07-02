@@ -12,7 +12,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(5);
 
 
-
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
 
@@ -27,7 +26,7 @@ app.$mount();
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: '数字彩开奖查询',
       navigationBarTextStyle: 'black'
     }
   }
@@ -100,11 +99,11 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   created() {
     // 调用API从本地缓存中获取数据
-    const logs = wx.getStorageSync('logs') || [];
+    const logs = wx.getStorageSync("logs") || [];
     logs.unshift(Date.now());
-    wx.setStorageSync('logs', logs);
+    wx.setStorageSync("logs", logs);
 
-    console.log('app created and cache logs by setStorageSync');
+    console.log("app created and cache logs by setStorageSync");
   }
 });
 

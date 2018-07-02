@@ -97,15 +97,6 @@ if (false) {(function () {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -159,7 +150,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
   return _c('div', {
     staticClass: "container",
     attrs: {
-      "eventid": '3'
+      "eventid": '1'
     },
     on: {
       "click": function($event) {
@@ -187,69 +178,12 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "text": _vm.userInfo.nickName,
       "mpcomid": '0'
     }
-  })], 1)]), _vm._v(" "), _c('div', {
-    staticClass: "usermotto"
-  }, [_c('div', {
-    staticClass: "user-motto"
-  }, [_c('card', {
-    attrs: {
-      "text": _vm.motto,
-      "mpcomid": '1'
-    }
-  })], 1)]), _vm._v(" "), _c('form', {
-    staticClass: "form-container"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.motto),
-      expression: "motto"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "v-model",
-      "eventid": '1'
-    },
-    domProps: {
-      "value": (_vm.motto)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.motto = $event.target.value
-      }
-    }
-  }), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model.lazy",
-      value: (_vm.motto),
-      expression: "motto",
-      modifiers: {
-        "lazy": true
-      }
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "v-model.lazy",
-      "eventid": '2'
-    },
-    domProps: {
-      "value": (_vm.motto)
-    },
-    on: {
-      "change": function($event) {
-        _vm.motto = $event.target.value
-      }
-    }
-  })]), _vm._v(" "), _c('a', {
+  })], 1)]), _vm._v(" "), _c('a', {
     staticClass: "counter",
     attrs: {
       "href": "/pages/counter/main"
     }
-  }, [_vm._v("初始化")])], 1)
+  }, [_vm._v("初始化")])])
 }
 var staticRenderFns = []
 render._withStripped = true
