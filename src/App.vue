@@ -16,9 +16,9 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
-  padding: 200rpx 0;
+  padding: 0;
   height: 100%;
 }
 </style>

@@ -1,12 +1,62 @@
-<import src="card$d3455654" />
 <template name="index$330ccc37">
-  <view class="_div data-v-e55e3b08 container" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
-    <view class="_div data-v-e55e3b08 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
-      <image class="_img data-v-e55e3b08 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <view class="_div data-v-e55e3b08 userinfo-nickname">
-        <template data="{{...$root[$kk+'0'], $root}}" is="card$d3455654"></template>
-      </view>
+  <view class="_div data-v-e55e3b08 container">
+    <view class="_div data-v-e55e3b08 menu">
+      <view class="_p data-v-e55e3b08 menu-item" bindtap="handleProxy" index="1" data-eventid="{{'0'}}" data-comkey="{{$k}}">全部</view>
+      <view class="_p data-v-e55e3b08 menu-item" bindtap="handleProxy" index="2" data-eventid="{{'1'}}" data-comkey="{{$k}}">11选5</view>
+      <view class="_p data-v-e55e3b08 menu-item" bindtap="handleProxy" index="3" data-eventid="{{'2'}}" data-comkey="{{$k}}">快3</view>
+      <view class="_p data-v-e55e3b08 menu-item" bindtap="handleProxy" index="4" data-eventid="{{'3'}}" data-comkey="{{$k}}">其它</view>
     </view>
-    <navigator url="/pages/counter/main" class="_a data-v-e55e3b08 counter">初始化</navigator>
+    <view class="_div data-v-e55e3b08 list">
+      <navigator url="/pages/counter/main" class="_a data-v-e55e3b08 counter">
+        <view class="_div data-v-e55e3b08 items">
+          <view class="_div data-v-e55e3b08">
+            <label class="_span data-v-e55e3b08 lotteryName">双色球</label>
+            <label class="_span data-v-e55e3b08 lotteryJackpot">奖池32亿</label>
+            <view class="_div data-v-e55e3b08 topRight">
+              <label class="_span data-v-e55e3b08 issuName">第2018011期</label>
+              <label class="_span data-v-e55e3b08 date">02-03</label>
+            </view>
+          </view>
+          <view class="_div data-v-e55e3b08 bottom">
+            <label class="_span data-v-e55e3b08 redBall">1</label>
+            <label class="_span data-v-e55e3b08 redBall">2</label>
+            <label class="_span data-v-e55e3b08 redBall">3</label>
+            <label class="_span data-v-e55e3b08 redBall">4</label>
+            <label class="_span data-v-e55e3b08 redBall">5</label>
+            <label class="_span data-v-e55e3b08 redBall">6</label>
+            <label class="_span data-v-e55e3b08 redBall">7</label>
+            <label class="_span data-v-e55e3b08 blueBall">80</label>
+            <view class="_div data-v-e55e3b08 topRight">
+              <image class="_img data-v-e55e3b08 rightArrow" src="/copy-asset/static/images/timeright.png" alt></image>
+            </view>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="/pages/counter/main" class="_a data-v-e55e3b08 counter">
+        <view class="_div data-v-e55e3b08 items">
+          <view class="_div data-v-e55e3b08">
+            <label class="_span data-v-e55e3b08 lotteryName">双色球</label>
+            <label class="_span data-v-e55e3b08 lotteryJackpot">奖池32亿</label>
+            <view class="_div data-v-e55e3b08 topRight">
+              <label class="_span data-v-e55e3b08 issuName">第2018011期</label>
+              <label class="_span data-v-e55e3b08 date">02-03</label>
+            </view>
+          </view>
+          <view class="_div data-v-e55e3b08 bottom">
+            <label class="_span data-v-e55e3b08 redBall">11</label>
+            <label class="_span data-v-e55e3b08 redBall">21</label>
+            <label class="_span data-v-e55e3b08 redBall">32</label>
+            <label class="_span data-v-e55e3b08 redBall">42</label>
+            <label class="_span data-v-e55e3b08 redBall">52</label>
+            <label class="_span data-v-e55e3b08 redBall">62</label>
+            <label class="_span data-v-e55e3b08 redBall">72</label>
+            <label class="_span data-v-e55e3b08 blueBall">80</label>
+            <view class="_div data-v-e55e3b08 topRight">
+              <image class="_img data-v-e55e3b08 rightArrow" src="/copy-asset/static/images/timeright.png" alt></image>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
   </view>
 </template>
