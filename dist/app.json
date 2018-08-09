@@ -3,11 +3,5 @@
     "pages/index/main",
     "pages/counter/main",
     "pages/logs/main"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "数字彩开奖查询",
-    "navigationBarTextStyle": "black"
-  }
+  ]
 }

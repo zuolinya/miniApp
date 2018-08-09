@@ -14,6 +14,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index__["a" /* default */]);
 app.$mount();
 
+/* harmony default export */ __webpack_exports__["default"] = ({
+  // 这个字段走 json
+  config: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#fff',
+    navigationBarTitleText: '数字彩开奖',
+    navigationBarTextStyle: 'black'
+  }
+});
+
 /***/ }),
 
 /***/ 16:
@@ -97,6 +107,170 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -129,8 +303,8 @@ if (false) {(function () {
         }
       });
     },
-    clickHandle(msg, ev) {
-      console.log("clickHandle:", msg, ev);
+    getDataId(type) {
+      console.log(type);
     }
   },
 
@@ -148,44 +322,146 @@ if (false) {(function () {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "container",
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "menu"
+  }, [_c('p', {
+    staticClass: "menu-item",
     attrs: {
+      "index": "1",
+      "eventid": '0'
+    },
+    on: {
+      "click": function($event) {
+        _vm.getDataId('all')
+      }
+    }
+  }, [_vm._v("全部")]), _vm._v(" "), _c('p', {
+    staticClass: "menu-item",
+    attrs: {
+      "index": "2",
       "eventid": '1'
     },
     on: {
       "click": function($event) {
-        _vm.clickHandle('test click', $event)
+        _vm.getDataId('11X5')
       }
     }
-  }, [_c('div', {
-    staticClass: "userinfo",
+  }, [_vm._v("11选5")]), _vm._v(" "), _c('p', {
+    staticClass: "menu-item",
     attrs: {
-      "eventid": '0'
+      "index": "3",
+      "eventid": '2'
     },
     on: {
-      "click": _vm.bindViewTap
+      "click": function($event) {
+        _vm.getDataId('K3')
+      }
     }
-  }, [(_vm.userInfo.avatarUrl) ? _c('img', {
-    staticClass: "userinfo-avatar",
+  }, [_vm._v("快3")]), _vm._v(" "), _c('p', {
+    staticClass: "menu-item",
     attrs: {
-      "src": _vm.userInfo.avatarUrl,
-      "background-size": "cover"
+      "index": "4",
+      "eventid": '3'
+    },
+    on: {
+      "click": function($event) {
+        _vm.getDataId('other')
+      }
     }
-  }) : _vm._e(), _vm._v(" "), _c('div', {
-    staticClass: "userinfo-nickname"
-  }, [_c('card', {
-    attrs: {
-      "text": _vm.userInfo.nickName,
-      "mpcomid": '0'
-    }
-  })], 1)]), _vm._v(" "), _c('a', {
+  }, [_vm._v("其它")])], 1), _vm._v(" "), _vm._m(0)])
+}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "list"
+  }, [_c('a', {
     staticClass: "counter",
     attrs: {
       "href": "/pages/counter/main"
     }
-  }, [_vm._v("初始化")])])
-}
-var staticRenderFns = []
+  }, [_c('div', {
+    staticClass: "items"
+  }, [_c('div', [_c('span', {
+    staticClass: "lotteryName"
+  }, [_vm._v("双色球")]), _vm._v(" "), _c('span', {
+    staticClass: "lotteryJackpot"
+  }, [_vm._v("奖池32亿")]), _vm._v(" "), _c('div', {
+    staticClass: "topRight"
+  }, [_c('span', {
+    staticClass: "issuName"
+  }, [_vm._v("第2018011期")]), _vm._v(" "), _c('span', {
+    staticClass: "date"
+  }, [_vm._v("02-03")])])]), _vm._v(" "), _c('div', {
+    staticClass: "bottom"
+  }, [_c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("1")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("2")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("3")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("4")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("5")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("6")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("7")]), _vm._v(" "), _c('span', {
+    staticClass: "blueBall"
+  }, [_vm._v("80")]), _vm._v(" "), _c('div', {
+    staticClass: "topRight"
+  }, [_c('img', {
+    staticClass: "rightArrow",
+    attrs: {
+      "src": "../../../static/images/timeright.png",
+      "alt": ""
+    }
+  })])])])]), _vm._v(" "), _c('a', {
+    staticClass: "counter",
+    attrs: {
+      "href": "/pages/counter/main"
+    }
+  }, [_c('div', {
+    staticClass: "items"
+  }, [_c('div', [_c('span', {
+    staticClass: "lotteryName"
+  }, [_vm._v("双色球")]), _vm._v(" "), _c('span', {
+    staticClass: "lotteryJackpot"
+  }, [_vm._v("奖池32亿")]), _vm._v(" "), _c('div', {
+    staticClass: "topRight"
+  }, [_c('span', {
+    staticClass: "issuName"
+  }, [_vm._v("第2018011期")]), _vm._v(" "), _c('span', {
+    staticClass: "date"
+  }, [_vm._v("02-03")])])]), _vm._v(" "), _c('div', {
+    staticClass: "bottom"
+  }, [_c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("11")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("21")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("32")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("42")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("52")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("62")]), _vm._v(" "), _c('span', {
+    staticClass: "redBall"
+  }, [_vm._v("72")]), _vm._v(" "), _c('span', {
+    staticClass: "blueBall"
+  }, [_vm._v("80")]), _vm._v(" "), _c('div', {
+    staticClass: "topRight"
+  }, [_c('img', {
+    staticClass: "rightArrow",
+    attrs: {
+      "src": "../../../static/images/timeright.png",
+      "alt": ""
+    }
+  })])])])])])
+}]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

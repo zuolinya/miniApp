@@ -21,6 +21,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index__["a" /* default */]);
 app.$mount();
 
+/* harmony default export */ __webpack_exports__["default"] = ({
+  // 这个字段走 json
+  config: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#fff',
+    navigationBarTitleText: '开奖详情',
+    navigationBarTextStyle: 'black'
+  }
+});
+
 /***/ }),
 /* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -97,7 +107,6 @@ if (false) {(function () {
 //
 //
 //
-//
 
 // Use Vuex
 
@@ -110,10 +119,10 @@ if (false) {(function () {
   },
   methods: {
     increment() {
-      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('increment');
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit("increment");
     },
     decrement() {
-      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('decrement');
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit("decrement");
     }
   }
 });
